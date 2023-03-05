@@ -1,0 +1,17 @@
+[package]
+name = "fan_control_arc_lib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+windows-sys = { version = "0.45", features = ["Win32_Foundation"] }
+sharedlib = "7.0.0"
+parking_lot = "0.12"
+once_cell = "1.17"
+rnet = "0.2"
+linkme = "0.2.7"
+
+[lib]
+crate-type = ["cdylib"]
