@@ -3,6 +3,8 @@
 A plug-in of [FanControl](https://github.com/Rem0o/FanControl.Releases), 
 which is used to provide the temperature sensor of Intel Arc Graphics.
 
+I successfully provided gpu core temperature sensor and VRam temperature sensor on my A750.
+
 I haven't actually learned c and c sharp (IGCL and FanControl require them), so the code for this program will appear very messy and unsound, but I'm sure I'll fix them later when I fix the problem.
 This library uses rust as an intermediate layer (c# calls rust calls c), which sounds a bit redundant, but it's because i'm not familiar with c and c sharp, and don't want to use c sharp to call c ffi directly.
 
