@@ -53,7 +53,7 @@ namespace fan_control_arc
 
         public string Id
         {
-            get => $"{id.low}.{id.high}";
+            get => Name;
         }
 
         public string Name
@@ -78,7 +78,7 @@ namespace fan_control_arc
 
         public string Id
         {
-            get => $"{id.low}.{id.high}";
+            get => Name;
         }
 
         public string Name
@@ -104,7 +104,7 @@ namespace fan_control_arc
 
         public string Id
         {
-            get => $"{id.low}.{id.high}";
+            get => Name;
         }
 
         public string Name

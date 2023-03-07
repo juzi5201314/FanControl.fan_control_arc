@@ -18,6 +18,7 @@ This library uses rust as an intermediate layer (c# calls rust calls c), which s
 ### Known issues
 * Any error: Because the code is a mess, this plugin temporarily assumes that your gpu must have a gpu temperature sensor and a gpu memory temperature sensor (otherwise it will error out).
 * Set graphics card fan speed: In fact, IGCL provides related api, but it cannot be used in my A750 (4146 driver) (unsupported feature), I don't know if it is the driver or other problems. But I will test it in the next driver, if it still doesn't work I will open an issue to ask them.
+* If you have two graphics cards of the same model, the sensor will confuse them, because there is no way to recognize two graphics cards that are the same.
 
 ### I can't use it
 I am happy to solve the bug of this plugin, please open an issue and provide FanControl's logs file and your pc information (graphics card model, driver version, or other information I need).
